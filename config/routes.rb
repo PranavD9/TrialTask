@@ -6,7 +6,14 @@ Rails.application.routes.draw do
     end
 
 
-  devise_for :users
+  devise_for :users, path: 'auth', path_names: {
+  	sign_in: 'login',
+  	sign_out: 'logout'
+  }
   root to: 'home#index'
+
+
+  
+  
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

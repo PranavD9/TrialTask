@@ -30,4 +30,9 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    attributes:
+      user:
+        login: "Company_ID or email"
+        username: "Company_ID"
+
